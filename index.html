@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Muhammad Zaid | Portfolio </title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">M.Zaid</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Switch to light theme"><i class="fas fa-sun"></i></button>
+    </nav>
+
+    <!-- Hero / Profile Section -->
+    <section id="profile" class="bg-alt hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Engineer Zaid </h1>
+                <p class="profile-role"> 3D Animation Designer-Front-End Developer</p>
+                <p class="profile-intro">A passionate CS undergrad blending technical problem-solving with creative
+                    design. My core focus lies in modern Front-End Web Development, Requirements Analysis, and immersive
+                    3D animation projects.</p>
+
+                <div class="social-links">
+                    <!-- Apni Facebook aur GitHub ki links yahan dalein -->
+                    <a href="https://web.facebook.com/engnr.almanizaid" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/naidbalochc3-design/personal-portfolio" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <!-- Facebook Link -->
+                    <a href="https://web.facebook.com/engnr.almanizaid" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+
+                    <!-- Instagram Link -->
+                    <a href="https://www.instagram.com/itx_engnr_zaid?rpxt=cTRkNWg5NmhrMXU1" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Profile Photo Div -->
+            <!-- Note: apni tasveer ka naam src="" ke andar sahi se likhna -->
+            <div class="profile-photo has-image" id="profile-photo">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                <img id="profile-image" src="Profile.jpg.jfif" alt="Profile photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Masti 3D Toons </h3>
+                <p>A YouTube channel featuring custom 3D animated children's stories in Urdu and Sindhi. Showcases my 3D
+                    modeling and animation skills.</p>
+                <button class="view-btn">View Details</button>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>E-Commerce Layout</h3>
+                <p>A modern, mobile-first e-commerce web interface built with HTML, CSS, and JavaScript featuring a
+                    clean product grid.</p>
+                <button class="view-btn">View Details</button>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>3D Profile Card</h3>
+                <p>An interactive developer profile card crafted using advanced CSS, smooth hover effects, and 3D
+                    transitions.</p>
+                <button class="view-btn">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-alt">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-box">
+            <p>I'm currently open to new opportunities and collaborations. Let's connect and create something great
+                together.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-field">
+                    <label for="contact-name">Your name</label>
+                    <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-email">Your email</label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" required>
+                </div>
+                <div class="form-field">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p class="contact-note">Your email app will open with your message ready to send.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Connect JavaScript -->
+    <script src="Script.js"></script>
+</body>
+
+</html>
